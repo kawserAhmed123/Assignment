@@ -1,25 +1,22 @@
 
-public class Rectangle {
+class Rectangle
+{
+    double length;
+    double breadth;
 
-    public double length;
-    public double width;
-    public double perimeter;
-    public double area;
-
-    public Rectangle(double l, double w) {
-        this.length = l;
-        this.width = w;
+    Rectangle(double length, double breadth)
+    {
+        this.length = length;
+        this.breadth = breadth;
     }
 
-    double calculateArea(double l, double w) {
-
-        area = l * w;
-        return area;
+    double getArea()
+    {
+        return length * breadth;
     }
 
-    double calculatePerimeter(double l, double w) {
-
-        perimeter = 2 * (l + w);
-        return perimeter;
+    double getPerimeter()
+    {
+        return 2 * (length + breadth);
     }
 }
